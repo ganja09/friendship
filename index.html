@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> <!-- Handwriting font -->
+</head>
+<body>
+    <div id="page1" class="page">
+        <img src="teddy_bear.png" alt="Teddy Bear" id="teddyBear">
+        <div class="content">
+            <h1>What is your name?</h1>
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            <button onclick="goToPage2()">Next</button>
+        </div>
+    </div>
+
+    <div id="page2" class="page" style="display: none;">
+        <img src="teddy_bear.png" alt="Teddy Bear" id="teddyBear">
+        <div class="content">
+            <h1>Will you become my friend?</h1>
+            <button id="yesButton" onclick="becomeFriend()">Yes</button>
+            <button id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+        </div>
+    </div>
+
+    <div id="page3" class="page" style="display: none;">
+        <img src="teddy_bear.png" alt="Teddy Bear" id="teddyBear">
+        <div class="content">
+            <h1>What do you like in Rahul?</h1>
+            <input type="text" id="favoriteInput" placeholder="Your answer here">
+            <button onclick="submitAnswer()">Submit</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
